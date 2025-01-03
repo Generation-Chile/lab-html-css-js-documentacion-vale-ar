@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Idioma del sitio -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohorte 17 - Fullstack Developers</title>
+    <!-- Descripcion del sitio en buscadores -->
+    <meta name="description" content="Descripción del sitio">
+    <!-- Palabras claves -->
+    <meta name="keywords" content="html, css, javascript, developer, fullstack, generation">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- Agregamos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="--bs-body-color">
+    <header>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#form">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> Cuenta
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="#">Crear Cuenta</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Creamos una clase para incluir la imagen de portada y personalizarla en css -->
+        <section class="portada position-relative">
+            <img src="assets/img/header.png" class="img-fluid" alt="Portada">            
+        </section>
+
+    </header>
+
+    <!-- Creamos la primera seccion de nuestra pagina -->
+    <section id="cta" class="container text-center text-warp">
+        <h1 class="fs-3 fs-md-2 fs-lg-1 text-warp">Full Stack <br><span class="d-flex text-warp">DEVELOPERS</span></h1>
+        <hr class="separador">
+        <h3>¡Únete a nuestro equipo!</h3>
+        <p>La comunidad de desarrolladores Full Stack Developers!</p>
+        <button class="btn btn-primary">
+            <a href="#form" class="text-white text-decoration-none">Obtener Informacion</a>
+        </button>
+    </section>
+
+    <!-- Creamos la segunda seccion de nuestra pagina agregando un formulario de contacto -->
+    <section id="form" class="container py-4">
+        <div class="row text-center">
+            <div class="col-12 mb-3">
+                <h3>¡Contáctanos para obtener <br> más información sobre nuestra comunidad!</h3>
+            </div>
+            <div class="col-12">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary w-100" onclick="btnEnviar()">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 FullStack Developers. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Importamos nuestro doc Javascript -->
+    <script src="interaccion.js"></script>
+
+    <!-- Importamos Bootstrap en los scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

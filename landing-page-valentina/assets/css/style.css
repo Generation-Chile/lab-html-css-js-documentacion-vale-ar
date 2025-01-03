@@ -1,0 +1,137 @@
+/* Header - Navbar */
+.navbar button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+/* Body */
+.portada {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.portada img {
+    width: 100%;
+    height: auto;
+}
+
+.portada::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sombra oscura */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Transición suave */
+    pointer-events: none;
+}
+
+.portada:hover::after {
+    opacity: 1;
+    /* Mostrar el efecto oscuro al hacer hover */
+}
+
+#cta {
+    padding: 50px;
+    text-align: center;
+}
+
+#cta h1 {
+    max-width: 100%;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+    text-shadow: 2px 2px 2px #8584844d;
+    overflow: hidden;
+}
+
+#cta h1 span {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 80px;
+    color: #007bff;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.separador {
+    margin: 90px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.cta p {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 2px #8584844d;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+    margin-top: 30px;
+}
+
+#form {
+    background-color: #99b4d252;
+    margin-top: 50px;
+}
+
+form {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 20px;
+}
